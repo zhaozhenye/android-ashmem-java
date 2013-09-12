@@ -3,3 +3,8 @@
 而Client是一个Activity，这个Activity通过Binder进程间通信机制获得前面这个Service创建的匿名共享内存文件的句柄，从而实现共享。
 在Android应用程序框架层，提供了一个MemoryFile接口来封装了匿名共享内存文件的创建和使用，
 它实现在frameworks/base/core/java/android/os/MemoryFile.java文件中
+
+拷贝工程目录到packages/experimental/Ashmem，依次敲击以下命令
+mmm packages/experimental/Ashmem
+make snod
+emulator
